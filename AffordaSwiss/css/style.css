@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Intro';
+    src: url('../fonts/Intro.otf') format('opentype');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Intro', sans-serif;
+    background-color: #000; /* Черный фон для сайта */
+    color: #FFFFFF; /* Белый цвет текста */
+}
+
+.header h1 {
+    font-size: 48px;
+    color: #ECAE00; /* Цвет текста */
+    text-align: center;
+    margin-top: 20px; /* Отступ сверху для заголовка */
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    margin-top: 20px; /* Отступ сверху для контента */
+    display: flex;
+    justify-content: center; /* Выравнивание по центру */
+    align-items: center; /* Выравнивание по вертикали посередине */
+    flex-direction: column; /* Вертикальное расположение элементов */
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 743px; /* Уменьшенная ширина изображения */
+    height: 493.75px; /* Уменьшенная высота изображения */
+}
+
+.image-container img {
+    width: 100%; /* Изображение растягивается на весь блок 
+.image-container */
+    height: auto;
+}
+
+.button {
+    position: absolute;
+    width: 371.5px; /* Половина ширины изображения */
+    height: 246.875px; /* Половина высоты изображения */
+    background: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Белый цвет с 
+прозрачностью 10% */
+}
+
+/* Расположение кнопок на изображении */
+#button-tl { top: 0; left: 0; }
+#button-tr { top: 0; right: 0; }
+#button-bl { bottom: 0; left: 0; }
+#button-br { bottom: 0; right: 0; }
+
+.info-text {
+    text-align: center; /* Выравнивание текста по центру */
+    font-size: 28px; /* Уменьшенный размер шрифта */
+    margin-top: 10px; /* Уменьшенный отступ сверху */
+}
+
+.home-button {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 20px; /* Отступ сверху */
+    right: 20px; /* Отступ справа */
+    text-align: center; /* Выравнивание по центру */
+}
+
+.home-button a {
+    text-decoration: none; /* Убрать подчеркивание текста-ссылки */
+    background-color: #ECAE00; /* Цвет фона */
+    color: #000000; /* Цвет текста */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    cursor: pointer; /* Курсор в виде указателя */
+    font-size: 24px; /* Размер шрифта на кнопке Home */
+}
+
+.home-button a:hover {
+    background-color: #d1b300; /* Цвет фона при наведении */
+}
+
+.order-section {
+    text-align: center; /* Выравнивание текста по центру */
+    font-size: 24px; /* Размер шрифта для раздела заказа */
+    margin-top: 20px; /* Отступ сверху */
+    background-color: #000; /* Черный фон для раздела заказа */
+    padding: 20px; /* Внутренние отступы для раздела заказа */
+    border-radius: 10px; /* Закругление углов для раздела заказа */
+}
+
+#order-form {
+    margin-top: 20px; /* Отступ сверху для формы */
+}
+
+#order-text {
+    width: 100%;
+    max-width: 600px; /* Максимальная ширина текстового поля */
+    margin: 0 auto; /* Выравнивание по центру */
+    padding: 10px; /* Отступы внутри текстового поля */
+    font-size: 20px; /* Размер шрифта в текстовом поле */
+    background-color: #000; /* Черный фон в текстовом поле */
+    color: #FFFFFF; /* Белый цвет текста в текстовом поле */
+}
+
+#send-button {
+    background-color: #ECAE00; /* Цвет фона кнопки "Send" */
+    color: #000000; /* Цвет текста кнопки "Send" */
+    border: none;
+    padding: 10px 20px;
+    font-size: 24px; /* Увеличенный размер шрифта на кнопке "Send" */
+    cursor: pointer;
+    margin-top: 20px; /* Отступ сверху для кнопки "Send" */
+}
+
+#send-button:hover {
+    background-color: #d1b300; /* Цвет фона при наведении на кнопку "Send" 
+*/
+}
+
